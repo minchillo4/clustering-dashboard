@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "churn-project"
+version = "0.1.0"
+description = "Data Science customer churn analsysis"
+package-mode = false # we want to use Poetry only for dependency management but not for packaging
+authors = ["Lucas Moreira <lucasmminchillo@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.1"
+numpy = "^1.26.4"
+streamlit = "^1.31.1"
+pip-audit = "^2.7.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "*"
+ipykernel = "^6.29.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
